@@ -1,0 +1,15 @@
+public class ATM {
+    public static void main(String[] args) {
+        int balance = 1000;
+        int withdraw = 200;
+        int deposit = 500;
+
+        // Simulating a withdrawal
+        balance -= withdraw;
+        System.out.println("Balance after withdrawal: " + balance);
+
+        // Simulating a deposit
+        balance += deposit;
+        System.out.println("Balance after deposit: " + balance);
+    }
+}
