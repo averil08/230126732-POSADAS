@@ -1,0 +1,123 @@
+    1  ls
+    2  cd downloads
+    3  ls
+    4  cd 230126732-POSADAS
+    5  ls
+    6  mkdir linux_practice
+    7  ls
+    8  cd linux_practice
+    9  touch notes.txt
+   10  ls
+   11  ls > notes.txt
+   12  ls
+   13  ls >> notes.txy
+   14  ls >> notes.txt
+   15  ls
+   16  rm notes.txy
+   17  ls
+   18  echo >> notes.txt
+   19  ls
+   20  nano notes.txt
+   21  notes.txt
+   22  start notes.txt
+   23  ls >> notes.txt
+   24  ls
+   25  nano notes.txt
+   26  ls > notes.txt
+   27  nano notes.txt
+   28  echo This is a practical exam. >> notes.txt
+   29  ls
+   30  nano notes.txt
+   31  head notes.txt
+   32  nano notes.txt
+   33  head notes.txt
+   34  nano notes.txt
+   35  tail notes.txt
+   36  ls
+   37  mkdir subdir
+   38  ls
+   39  mv notes.txt ~/subdir
+   40  ls
+   41  mv subdir practice_subdir
+   42  ls
+   43  cd practice_subdir
+   44  ls
+   45  cd..
+   46  cd ..
+   47  ls
+   48  cd ..
+   49  ls
+   50  cd linux_practice
+   51  ls
+   52  cd practice_subdir
+   53  ls
+   54  cd ..
+   55  touch notes.txt
+   56  ls
+   57  echo >> notes.txt
+   58  nano notes.txt
+   59  ls >> notes.txt
+   60  ls
+   61  nano notes.txt
+   62  head notes.txt
+   63  tail notes.txt
+   64  ls
+   65  cp notes.txt ~/practice_subdir
+   66  ls
+   67  cd practice_subdir
+   68  ls
+   69  cp notes.txt 
+   70  cd ..
+   71  ls
+   72  cd practice_subdir
+   73  mkdir notes.txt 
+   74  nano notes.txt
+   75  echo >> notes.txt
+   76  ls
+   77  rm notes.txt
+   78  rmdir notes.txt
+   79  ls
+   80  touch notes.txt
+   81  nano notes.txt
+   82  ls
+   83  cd ..
+   84  ls
+   85  time
+   86  date
+   87  df -h
+   88  cd 
+   89  df -h
+   90  ssh -v
+   91  ssh --versiob
+   92  ssh --version
+   93  ssh 
+   94  ssh -version
+   95  ssh --version
+   96  ssh 
+   97  php --version
+   98  openssh --version
+   99  mysql 
+  100  mysql --version
+  101  apachectl -v
+  102  python --version
+  103  java 
+  104  java --version
+  105  ssh --version
+  106  cal
+  107  mysql --version
+  108  openssh -v
+  109  ssh -v
+  110  top
+  111  ssh -v
+  112  openssh -v
+  113  ssh -V
+  114  mysql -V
+  115  mysql --version
+  116  gh repo clone https://github.com/averil08/230126732-POSADAS
+  117  ls
+  118  cd 230126732-POSADAS
+  119  git checkout -b finalexam
+  120  git branch
+  121  touch exam_log.txt
+  122  ls
+  123  history > exam_log.txt
