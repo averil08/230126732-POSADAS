@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana, Tahoma;
+    background-color: #2C4157;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    padding: 100px;
+    background-color: white;
+    color: #2C4157;
+    text-align: center;
+}
+
+/* Styling for the buttons */
+.nav-buttons {
+    margin-bottom: 100px;
+}
+
+.nav-buttons button {
+    background-color: #4CAF50; /* Green background */
+    color: white;              /* White text */
+    border: none;              /* Remove borders */
+    padding: 10px 20px;        /* Padding inside the button */
+    text-align: center;        /* Center the text */
+    text-decoration: none;     /* Remove underline (for links) */
+    display: inline-block;     /* Display buttons in a line */
+    font-size: 16px;           /* Text size */
+    margin: 5px;               /* Space between buttons */
+    cursor: pointer;           /* Pointer cursor on hover */
+    border-radius: 5px;        /* Rounded corners */
+}
+
+.nav-buttons button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
