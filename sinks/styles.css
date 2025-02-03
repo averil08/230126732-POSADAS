@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wonkacover {
+    background-image: url('wonka.png');
+    background-size: cover; /*Resize background image to cover entire container*/
+    background-position: center; /*placed in center*/
+    height: 600px;
+    width: 100%;
+}
