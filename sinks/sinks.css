@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    padding:10px;
+    margin-bottom: none;
+}
+.navdiv {
+    display: flex; /*flex na rin button, goes right, small screen= center*/
+    align-items: center; /*nakacenter sla sa whole bar*/
+}
+
+.navbar ul {
+    display: flex;  /*kapag small screen per line*/
+    justify-content: left; 
+}
+
+.navbar li {
+    list-style: none; /*removes bullet: home, about us*/
+}
+
+.navbar li a {
+    color: #3b3b21;
+    font-family: 'inter', sans-serif;
+    font-size: 18px;
+    text-decoration: none; /*removes underlined text*/
+    font-weight: light; /*not bold*/
+    margin-right: 25px; /*put space between home, about us*/
+}
+
+.navbar li a:hover { /*highlight per word pag natapat*/
+    background-color: #ab8868; /*gives color if natapat cursor*/
+    border-radius: 90px;
+    padding: 10px;
+}
+
+button {
+    background-color: #FEFFD2;
+    margin-left: auto;
+    border-radius: 90px; /*pagkabilog ng button*/
+    padding: 10px;
+    width: 140px;
+}
+
+button a {
+    color: #2b281f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sinkscover{
+    background-image: url('sinkscover.jpg');
+    background-size: cover; /*Resize background image to cover entire container*/
+    background-position: center; /*placed in center*/
+    height: 600px;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth; /*scrolls in linked navigations*/
+}
+
+/*MAIN CONTENT*/
+.wrapper {
+    width: 100%;
+    color: #3b3b21;
+    font-family: 'inter', sans-serif;
+}
+
+.types-sinks {
+    background-color: #fff3e7;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.types-sinks h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.types-sinks p {
+    text-align: center;
+}
+.header-info {
+    width: 100%;
+    text-align: center;
+}
+
+.header-info h3 {
+    padding-top: 50px; /*space between h1 and picture above*/
+    
+}
+
+.header-info h2 {
+    padding-bottom: 30px;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    font-weight: lighter;
+    .highlight {
+        font-weight: bold;
+        color:#2b281f;
+    }
+}
+
+.header-info h2 {
+    .highlightB {
+        font-weight: bold;
+        color: #734c37;
+    }
+}
+
+.section-line {
+    text-align: center;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.section-line h1 {
+    text-decoration:line;
+}
+
+
+.about-sinks {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    justify-content: space-between; /*enables space between each*/
+    gap: 5px; /*specify space size between each flex item*/
+}
+
+.features {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.features p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.about, .features{
+    flex: 1 1 300px; /* Adjust the basis to ensure the width adapts */
+    margin: 10px; /*adds space around each item */
+}
+
+.flex-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    justify-content: space-between; /*enables space between each*/
+    gap: 10px; /*specify space size between each flex item*/
+}
+
+.sink1-info, .sink2-info, .sink3-info, .sink4-info, .sink5-info, .sink6-info, .sink7-info, .sink8-info, .sink9-info{
+    flex: 1 1 300px; /* Adjust the basis to ensure the width adapts */
+    margin: 10px; /*adds space around each item */
+}
+
+.footer-info {
+    background-color: #ada498;
+    padding: 10px;
+    color: white;
+}
+
+.footer-info h3 {
+    font-weight: lighter;
+}
+
+.footer {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.contacts {
+    color: #47482b;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.fa-brands.fa-instagram.fa-xl { /*need dots, cannot read if not dikit*/
+    align-self: center;
+}
+.material-symbols-outlined:hover {
+    background-color: #feffd2;
+    border-radius: 20px;
+    padding: 5px;  
+}
+
+.fa-brands.fa-instagram.fa-xl:hover {
+    background-color: #feffd2;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.flex-content h2 {
+    text-align: center;
+}
+
+.flex-content p {
+    text-align: justify;
+}
+
+.sink1-info {
+    width: 100%;
+}
+
+.sink1-jpg {
+    border-radius: 30px;
+}
+
+.sink2-jpg {
+    border-radius: 30px;
+}
+
+.sink3-jpg {
+    border-radius: 30px;
+}
+
+.sink4-jpg {
+    border-radius: 30px;
+}
+
+.sink5-jpg {
+    border-radius: 30px;
+}
+
+.sink6-jpg {
+    border-radius: 30px;
+}
+
+.sink7-jpg {
+    border-radius: 30px;
+}
+
+.sink8-jpg {
+    border-radius: 30px;
+}
+
+.sink9-jpg {
+    border-radius: 30px;
+}
+
+.sink3-info {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .navdiv {
+        flex-direction: column; /*ul and button vertically*/
+    }
+
+    .navbar ul {
+        flex-direction: column; /*make navigation links vertical*/
+        text-align: center;
+    }
+
+    .navbar li {
+        margin-bottom: 20px;
+    }
+
+    button {
+        margin-left: 0; /*Removes left margin for small screens*/
+        width: 100%; /*button span in full width*/
+    }
+
+    .sinkscover {
+        display: block;
+        padding-bottom: 30px;
+        padding-top: 50px;
+        height: 250px;
+        width: 100%;
+    }
+
+    .flex-content {
+        flex-direction: column; /*make the pics and description vertical like in navdiv*/
+    }
+
+    .features {
+        padding-top: 0;
+    }
+
+    .header-info h2 {
+        margin: 20px;
+        text-align: justify;
+    }
+
+    .types-sinks p {
+        text-align: justify;
+    }
+}
