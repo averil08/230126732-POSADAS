@@ -5,28 +5,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wonka</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/47eb9c3571.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar">
-            <div class="navdiv">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Preview</li>
-                    <li>Services</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label class="logo">Wonka</label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
-
         <div id="home" class="wonkacover"></div>
 
         <div class="wrapper">
-            <section id="about-us" class="header-info">
-                <p>image here/flexbox</p>
-                <h2>About Us</h2>
-                <p>Welcome to Wonka, your #1 donut shop! where donuts are our love language and sharing is optional! We’re a fun-loving Donut Scientists dedicated to creating delicious, unique donuts that make your taste buds dance.<br><br> From classic glazed to bold creations like maple bacon, we’ve got something for every craving. We’re constantly experimenting with flavors using fresh, local ingredients and a dash of magic. Come for the donuts, stay for the joy—they’re guaranteed to make your day a little sweeter!</p>
-            </section>
+            <article id="about" class="about-info">
+                <h2>A brief history about our delicate donuts!</h2>
+                <p>Welcome to Wonka, where our fun-loving Donut Scientists craft magical, crave-worthy donuts because sharing is optional, but joy is guaranteed! 🍩✨<br><br>Every bite is a delicious experiment, made with fresh ingredients and a sprinkle of creativity!</p>
+
+                <div class="button-container">
+                    <button><a href="#">Shop here</a></button>
+                </div>
+            </article>
+            <img class="about-img" src="about.png" alt="Donut Picture">
+        </div>
+
+        <div id="services" class="card-container">
+            <div class="card">
+                <img src="donut1.jpg">
+                <div class="card-content">
+                    <h3>Catering & Events</h3>
+                    <p>We bring the sweetness to birthdays, weddings, and office parties!</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="donut1.jpg">
+                <div class="card-content">
+                    <h3>Custom Donuts</h3>
+                    <p>Create your own donut with unique flavors, toppings, and fillings!
+                    </p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="donut1.jpg">
+                <div class="card-content">
+                    <h3>Online Purchase</h3>
+                    <p>Fresh donuts delivered right through your doorstep for 24 hours.</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
         </div>
     </body>
 </html>

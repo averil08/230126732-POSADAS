@@ -1,11 +1,252 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", serif;
+    font-style: normal;
 }
 .wonkacover {
-    background-image: url('wonka.png');
+    background-image: url('wonka3.png');
     background-size: cover; /*Resize background image to cover entire container*/
     background-position: center; /*placed in center*/
     height: 600px;
     width: 100%;
+}
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: #370401;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 80px; /*set line height for wonka and ul li(home, about...)*/
+    padding: 0 30px;
+}
+
+nav ul {
+    float: right; /*makes ul goes right*/
+    margin-right: 30px;
+
+}
+
+nav ul li { /*position of home, about...*/
+    display: inline-block; /*makes ul li go horizontal or ______*/
+    line-height: 80px;
+    margin: 0 9px; /*(top & bot), (left & right)*/
+}
+
+nav ul li a {
+    color: #370401;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 7px 13px;
+    
+}
+
+a.active, a:hover{
+    background: #e0c1c2;
+    transition-duration: 0.4s;
+}
+
+.checkbtn {
+    font-size: 26px;
+    color: #370401;
+    float: right;
+    line-height: 80px;
+    margin-right: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+.wrapper {
+    width: 100%;
+}
+.about-info {
+    width: 100%;
+}
+
+.about-info, h2 {
+    padding: 30px 30px 20px;
+    color: #370401;
+    line-height: 35px;
+}
+
+.about-info, p {
+    padding: 0px 30px 20px;
+    color: #370401;
+    line-height: 30px;
+}
+
+.about-img {
+    width: 100%;
+}
+.button-container {
+    text-align: center;
+    cursor: pointer;
+}
+button {
+    background:#370401;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+button a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+/*FLEX CONTENT*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 100%;
+    padding-top: 180px;
+}
+
+.card {
+    width: 325px;
+    background: #e0c1c2;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba (0,0,0,0.2);
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.card-content .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 16px;
+}
+@media screen and (min-width: 768px) {
+    .wrapper {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .about-info, h2 {
+        padding: 20px 0px 0px;
+    }
+    
+    .about-info, p {
+        padding: 20px 0px 0px;
+    }
+
+    .about-img {
+        padding-top: 30px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .wrapper {
+    width: 1000px;
+    }
+
+    .about-info {
+    width: 50%;
+    float: right;
+    }
+
+    .about-img {
+    padding-top: 160px;
+    width: 50%;
+    float: left;
+    border-radius: 50px;
+    }
+
+    .about-info, h2 {
+    padding: 160px 0px 0px 30px; /*top, right, left, bot*/
+    }
+
+    .about-info, p {
+    padding: 20px 0px 0px 30px;
+    }
+
+    .button-container {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wonkacover {
+        display: block;
+        padding-bottom: 30px;
+        padding-top: 50px;
+        height: 350px;
+        width: 100%;
+    }
+
+   
+   
+}
+@media screen and (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #e0c1c2;
+        top: 80px;
+        left: -100%; /*opens menu left to right*/
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+    }
+
+    a.active, a:hover{
+        background: none;
+        color: #ffffff;
+        
+    }
+
+    nav ul li {
+        display: block; /*makes home, about... lined up vertically or | */
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #check:checked ~ ul {
+        left: 0; /*enable left to right open of menu*/
+    }
 }
