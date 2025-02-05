@@ -210,8 +210,6 @@ button a {
         height: 350px;
         width: 100%;
     }
-
-   
    
 }
 @media screen and (max-width: 858px) {
@@ -248,5 +246,8 @@ button a {
 
     #check:checked ~ ul {
         left: 0; /*enable left to right open of menu*/
+    }
+    #check:checked ~ ul li { /*edited1*/
+        display: none;
     }
 }
