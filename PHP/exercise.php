@@ -28,7 +28,7 @@
 
         //EXERCISE 3
         echo "<br> EXERCISE 3";
-        for ($x = 1; $x <=100; $x++) {s
+        for ($x = 1; $x <=100; $x++) {
             echo "<br> $x <br>";
         }
 
