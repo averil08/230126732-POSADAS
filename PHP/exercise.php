@@ -67,22 +67,16 @@
     ?>
 
     <p>EXERCISE 5</p>
-    <form action="process_form.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+    <form method="post">
+        Name: <input type="text" name="name">
         <input type="submit" value="Submit">
     </form>
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Check if the 'name' field is set
-        if (isset($_POST['name'])) {
-            $name = htmlspecialchars($_POST['name']);
-            echo "Hello, " . $name . "!";
-        } else {
-            echo "Name is not provided.";
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $name = $_POST["name"];
+            echo "<p>Hello, $name!</p>";
         }
-    }
     ?>
 </body>
 </html>
