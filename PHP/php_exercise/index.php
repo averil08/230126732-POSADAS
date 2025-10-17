@@ -41,7 +41,7 @@
     $varA = 10;
     $varB = 20;
     echo "Before swap: <br> varA = " . $varA . ", varB = " . $varB; 
-    $temp = $varA; //temporary variab;e
+    $temp = $varA; //temporary variable
     $varA = $varB;
     $varB = $temp;
     
