@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>PHP EXERCISES</h1>
+    
     <?php
     echo "<h3>Introduce yourself:</h3>";
     $name = "Averil Posadas";
@@ -33,7 +34,6 @@
     ";
     $celsius = 20;
     $fahrenheit = $length * 9/5 + 32;
-    $perimeter =  2 * ($length + $width); 
     echo "Fahrenheit is " . $fahrenheit . " °F"; 
 
     echo "<h3>Swapping Variables</h3>
